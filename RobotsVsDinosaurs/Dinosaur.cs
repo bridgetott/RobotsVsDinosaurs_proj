@@ -18,9 +18,11 @@ namespace RobotsVsDinosaurs
 
 
         //constructor (INITIAL VALUES)
+        
 
-        public Dinosaur()
+        public Dinosaur(string breed)
         {
+            this.breed = breed;
 
         }
 

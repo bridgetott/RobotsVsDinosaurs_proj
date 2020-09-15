@@ -11,13 +11,15 @@ namespace RobotsVsDinosaurs
 
         //member variable (HAS A)
         List<Dinosaur> dinosaurs;
+        List<string> dinosaurNames = new List<string>() { "T-Rex", "Stegosaurus", "Raptor" };//come back make a list of names for each dino
+
         public Herd()
         {
             dinosaurs = new List<Dinosaur>();
 
             for (int i = 0; i < 3; i++)
             {
-                Dinosaur eachDinosaur = new Dinosaur();
+                Dinosaur eachDinosaur = new Dinosaur(dinosaurNames[i]);
                 dinosaurs.Add(eachDinosaur);
             }
         }

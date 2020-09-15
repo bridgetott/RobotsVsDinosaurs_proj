@@ -16,13 +16,18 @@ namespace RobotsVsDinosaurs
         public int powerlevel;
         public string weapon; //maybe make a list of weapons or pull from the weapons class!!!
         public int botAttackPower;
-        
+
 
 
         //constructor (INITIAL VALUES)
-      
-    
-        
+
+        public Robot(string name)
+        {
+            this.name = name;
+
+        }
+
+
 
         //member methods (CAN DO)
 
