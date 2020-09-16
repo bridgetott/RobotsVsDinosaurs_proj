@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace RobotsVsDinosaurs
 {
@@ -26,25 +27,45 @@ namespace RobotsVsDinosaurs
       
         {
             this.name = name;
-            botHealth = 5;
+            botHealth = 100;
             powerlevel = 100;            
             botAttackPower = 10;
-            weapon = "";
+            weapon = "shotgun";
 
         }
 
 
 
         //member methods (CAN DO) //attack method
-        public void RobotAttacksDino(string robotNames, string dinosaurNames) 
+        public void RobotAttacksDino(Dinosaur dinosaur) 
         {
-            //numberFive is going to attack T-Rex
+           //Pick a Robot
             //T-Rex health, energy and attack level go down
-            string result = Console.ReadLine();
-            bool hit = true;
-            int Dinosaur.dinoEnergy -=
+            //Console.WriteLine("Please pick a Robot that will attack?" ); // how do they know what to pick??
+            //string attackingRobot = Console.ReadLine();
+            //Console.WriteLine("Please pick a Dinosaur to be attacked?"); //how do they know what to pick??
+                                                                         //List<string> robotNames = Console.ReadLine();
 
-           
+            //when Robot and Dinosaur are chosen then Dinos health goes down
+            Console.WriteLine(name + " is attacking " + dinosaur.breed + " with it's " + weapon);            
+            dinosaur.dinoHealth -= botAttackPower;
+            powerlevel -= 10;
+
+            if (dinosaur.dinoHealth == 0)
+            {
+                Console.WriteLine("Robots win!");
+                
+            }           
+            else
+            {
+                Console.WriteLine("Dino's are still alive");
+                
+            }
+
+
+
+
+
         }
 
 

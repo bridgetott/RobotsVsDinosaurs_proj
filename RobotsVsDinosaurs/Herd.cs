@@ -10,7 +10,7 @@ namespace RobotsVsDinosaurs
     {
 
         //member variable (HAS A)
-        List<Dinosaur> dinosaurs;
+        public List<Dinosaur> dinosaurs;
         List<string> dinosaurNames = new List<string>() { "T-Rex", "Stegosaurus", "Raptor" };//come back make a list of names for each dino
 
         public Herd()

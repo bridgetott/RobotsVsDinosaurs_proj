@@ -10,7 +10,7 @@ namespace RobotsVsDinosaurs
     {
 
         //member variable (HAS A)
-        List<Robot> robots;
+        public List<Robot> robots;
         List<string> robotNames = new List<string>() { "R2D2", "NumberFive", "RoboGirl" };//come back make a list of names for each robot
 
         //constructor (INITIAL VALUES)
