@@ -14,7 +14,7 @@ namespace RobotsVsDinosaurs
         string botweapon; // make a list for each weapon to give to each robot
 
         //constructor (INITIAL VALUES)
-        public Weapon()
+        public Weapon(string dinoweapon)
         {
             //create a for loop to assign weapons to each dino and robot.
         }

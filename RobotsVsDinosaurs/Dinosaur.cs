@@ -12,7 +12,7 @@ namespace RobotsVsDinosaurs
         //member variable (HAS A)
 
         public string breed;
-        public string dinoHealth;
+        public int dinoHealth;
         public int dinoEnergy;
         public int dinoAttackPower;
 
@@ -23,8 +23,13 @@ namespace RobotsVsDinosaurs
         public Dinosaur(string breed)
         {
             this.breed = breed;
+            dinoHealth = 5;
+            dinoEnergy = 100;
+            dinoAttackPower = 10;
 
         }
+        
+
 
         //member methods (CAN DO)
     }
